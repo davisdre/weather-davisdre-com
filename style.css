@@ -1,0 +1,25 @@
+.weather-container {
+    background: #ccc;
+    text-align: center;
+}
+.weather{
+    font-size: 5vw;
+    margin: 0;
+}
+.temp{
+    font-size: 5vw;
+    margin: 0;
+    font-weight: bold;
+}
+.name{
+    font-size: 5vw;
+    margin: 0;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.input{
+    text-align: center;
+}
