@@ -1,5 +1,5 @@
 # openweather-api project
-I wanted to learn more about working with API to help me with a website that I want to build and was told to use the API when building the website. So, I was refered to research on how to do that via Google. I came across this YouTube video (https://youtu.be/InoAIgBZIEA) to start!
+I wanted to learn about working with APIs to help me with a website that I want to build. I was told to use an API when building the website. So, I was referred to research on how to do that via Google. I came across this YouTube video (https://youtu.be/InoAIgBZIEA) to start!
 
 ## My take aways
 1. Knowing basic HTML, JavaScript, and CSS is good. 
