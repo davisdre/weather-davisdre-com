@@ -1,17 +1,25 @@
 var token = config.MY_API_TOKEN;
+var button = document.querySelector('.button')
+var inputValue = document.querySelector('.inputValue')
+var name = document.querySelector('.name')
+var temp = document.querySelector('.temp')
+var weather = document.querySelector('.weather')
+var icon = document.querySelector('.icon')
 
-var city ="Indianapolis";
+button.addEventListener("click", function(){
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&units=imperial&appid=' + token)
+    .then(response => response.json())
+    .then(data => {
+        var iconValue="https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+        var tempValue= Math.floor(data.main.temp);
+        var weatherValue=data.weather[0].main;
+        var nameValue=data.name;
 
-$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + token, 
-function(data) {
+        name.innerHTML = nameValue;
+        temp.innerHTML = tempValue;
+        weather.innerHTML = weatherValue;
+        icon.innerHTML = iconValue;
+    })
 
-    var icon="https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-    var temp= Math.floor(data.main.temp);
-    var weather=data.weather[0].main;
-    var name=data.name
-    
-    $('.icon').attr('src', icon);
-    $('.weather').append(weather);
-    $('.temp').append(temp);
-    $('.name').append(name);
-});
+.catch(err => alert("Wrong city name!"))
+})
