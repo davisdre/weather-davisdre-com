@@ -6,26 +6,30 @@
         <title>Open Weather API Project</title>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
         <script type='text/javascript' src='config.js'></script>
-        
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
         <div class="input">
-            <input type="text" class="inputValue" placeholder="Enter a city">
-            <input type="submit" value="Submit" class="button">
+            <input type="text" placeholder="Enter the city" class="input_text">
+            <input type="submit" value="Submit" class="submit">
+          </div>
         </div>
-        
-        <div class="display">
-            <h1 class="name"></p>
-            <img class="icon">
-            <p class="weather"></p>
+      
+        <div class="container">
+          <div class="card">
+            <h1 class="name" id="name"></h1>
             <p class="temp"></p>
+            <p class="icon">
+            <p class="desc"></p>
+          </div>
         </div>
-    <p></p>
-    <p></p>
-    <p style="font-size:2vw;">The is my Open Weather API project. My first time working with an API. <a href="https://github.com/davisdre/weather-davisdre-com">Learn more here</a> about my Open Weather API project!</p>
-    <p style="font-size: 2vw;">This site is proudly hosted on AWS S3 with AWS CloudFront for CDN and HTTPS, and using AWS CodePipeline to push code over to S3.</p>
+    <br>
+    <br>
+    <br>
+    <p>The is my Open Weather API project. My first time working with an API. <a href="https://github.com/davisdre/weather-davisdre-com">Learn more here</a> about my Open Weather API project!</p>
+    <br>
+    <p>This site is proudly hosted on AWS S3 with AWS CloudFront for CDN and HTTPS, and using AWS CodePipeline to push code over to S3.</p>
     </body>
     <script src="script.js"></script>
 </html>
